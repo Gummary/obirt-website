@@ -1,29 +1,87 @@
 {{ define "main" }}
-<section class="hero is-medium has-bg-img">
+<section class="hero is-large has-bg-img">
 	<div class="hero-body">
-		<p class="title">
-			Primary hero
-		</p>
-		<p class="subtitle">
-			Primary subtitle
-		</p>
+		<div class="container has-text-centered">
+			<h1 class="title has-text-white">
+				球场上飞的不是球，是思想。
+			</h1>
+			<h2 class="subtitle has-text-white">
+				Obirt Lab
+			</h2>
+		</div>
+	</div>
+	<div class="hero-foot">
+		<nav class="tabs is-boxed is-fullwidth">
+			<div class="container">
+				<ul>
+					<li class="tab is-active" onclick="openTab(event,'WebDev')"><a class="has-text-black">导师介绍</a></li>
+					<li class="tab" onclick="openTab(event,'WebAud')"><a class="has-text-white">学术论文</a></li>
+					<li class="tab" onclick="openTab(event,'Support')"><a class="has-text-white">近期研究</a></li>
+					<li class="tab" onclick="openTab(event,'Contract')"><a class="has-text-white">加入我们</a></li>
+				</ul>
+			</div>
+		</nav>
 	</div>
 </section>
-<section>
 
-</section>
-<section class="section">
-	<p>123456</p>
-	<p>123456</p>
-	<p>123456</p>
-	<p>123456</p>
-	<p>123456</p>
-	<p>123456</p>
-	<p>123456</p>
-	<p>123456</p>
-	<p>123456</p>
-	<p>123456</p>
-	<p>123456</p>
-	<p>123456</p>
-</section>
+<div class="container section">
+	<div id="WebDev" class="content-tab">
+		<p>
+			test1<br>
+			Overview Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+			industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+			scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+			electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+			Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+			Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+	<div id="WebAud" class="content-tab" style="display:none">
+		<p>
+			test2<br>
+			Details Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+			industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+			scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+			electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+			Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+			Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+	<div id="Support" class="content-tab" style="display:none">
+		<p>
+			test3 <br>
+			Specification Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+			been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+			and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+			into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+			release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+			software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+	<div id="Contract" class="content-tab" style="display:none">
+		<p>
+			test4 <br>
+			Specification Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+			been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+			and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+			into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+			release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+			software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	</div>
+</div>
+
+<script>
+	function openTab(evt, tabName) {
+		var i, x, tablinks;
+		x = document.getElementsByClassName("content-tab");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tab");
+		for (i = 0; i < x.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+			// tablinks[i].find('a').className = "has-text-white";
+		}
+		document.getElementById(tabName).style.display = "block";
+		evt.currentTarget.className += " is-active";
+		$(evt.currentTarget).find("a").className = "has-text-black";
+	}
+</script>
 {{ end }}

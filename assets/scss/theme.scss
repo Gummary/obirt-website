@@ -1,7 +1,6 @@
 .has-bg-img { 
-	background: url('/backgrounds/contract.jpg');
-	background-attachment: fixed;
-    background-position: center center;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/backgrounds/contract.jpg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
