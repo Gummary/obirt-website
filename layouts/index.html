@@ -17,7 +17,7 @@
 					<li class="tab is-active" onclick="openTab(event,'prof')"><a class="has-text-black">导师介绍</a></li>
 					<li class="tab" onclick="openTab(event,'article')"><a class="has-text-white">学术论文</a></li>
 					<li class="tab" onclick="openTab(event,'research')"><a class="has-text-white">近期研究</a></li>
-					<li class="tab" onclick="openTab(event,'Contract')"><a class="has-text-white">加入我们</a></li>
+					<li class="tab" onclick="openTab(event,'contract')"><a class="has-text-white">加入我们</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -35,7 +35,7 @@
 		</div>
 		<div class="column">
 			<p>
-			北京师范大学认知神经科学与学习国家重点实验室近红外成像研究中心主任、方法学研究方向学术带头人。教育部“新世纪优秀人才支持计划”入选者。中国教育学会脑科学与教育研究分会理事、《磁共振成像》学术期刊编委、国家自然科学基金委医学部、信息学部以及生命学部函评专家、医学部特邀会评专家
+				北京师范大学认知神经科学与学习国家重点实验室近红外成像研究中心主任、方法学研究方向学术带头人。教育部“新世纪优秀人才支持计划”入选者。中国教育学会脑科学与教育研究分会理事、《磁共振成像》学术期刊编委、国家自然科学基金委医学部、信息学部以及生命学部函评专家、医学部特邀会评专家
 			</p>
 			<p>
 				累计发表SCI论文56篇，论文被Nature系列、PNAS等国际顶尖期刊多次正面引用，SCI他引1454次，单篇最高SCI他引148次，单篇平均SCI他引近26次。
@@ -44,14 +44,85 @@
 	</div>
 	<div id="article" class="columns" style="display:none">
 		<div class="column">
-			First column
-		  </div>
-		  <div class="column">
-			Second column
-		  </div>
-		  <div class="column">
-			Third column
-		  </div>
+			<div class="card">
+				<div class="card-image">
+					<figure class="image is-4by3">
+						<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+					</figure>
+				</div>
+				<div class="card-content">
+					<div class="content">
+						test test
+						test test
+						test test
+						test test
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+						<a href="#">#css</a> <a href="#">#responsive</a>
+						<br>
+						<time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<div class="card-image">
+					<figure class="image is-4by3">
+						<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+					</figure>
+				</div>
+				<div class="card-content">
+					<div class="content">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+						<a href="#">#css</a> <a href="#">#responsive</a>
+						<br>
+						<time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<div class="card-image">
+					<figure class="image is-4by3">
+						<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+					</figure>
+				</div>
+				<div class="card-content">
+					<div class="content">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+						<a href="#">#css</a> <a href="#">#responsive</a>
+						<br>
+						<time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="research" class="columns" style="display:none">
+		<div class="column">
+			research1
+		</div>
+		<div class="column">
+			research2
+		</div>
+		<div class="column">
+			research3
+		</div>
+	</div>
+	<div id="contract" class="columns" style="display:none">
+		<div class="column">
+			contract1
+		</div>
+		<div class="column">
+			contract2
+		</div>
+		<div class="column">
+			contract3
+		</div>
 	</div>
 </div>
 
@@ -67,7 +138,7 @@
 			tablinks[i].className = tablinks[i].className.replace(" is-active", "");
 			$(tablinks[i]).find("a").get(0).className = "has-text-white";
 		}
-		document.getElementById(tabName).style.display = "block";
+		document.getElementById(tabName).style = "";
 		evt.currentTarget.className += " is-active";
 		$(evt.currentTarget).find("a").get(0).className = "has-text-black";
 	}
