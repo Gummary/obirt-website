@@ -1,0 +1,31 @@
+[zhangsan]
+mugshot = "mugshots/zhangsan.jpg"
+name = "张三"
+text = [
+	"What happens when people who have trouble fitting into a traditional workplace get one designed just for them?",
+	"How did it come to this? A virus a thousand times smaller than a dust mote has humbled and humiliated the planet’s most powerful nation."
+]
+
+[lisi]
+mugshot = "mugshots/lisi.jpg"
+name = "李四"
+text = [
+	"The shrinking of the country’s ice sheet is triggering feedback loops that accelerate the global crisis.",
+	"The retired senator Mike Gravel gave two young fans his Twitter password and permission to campaign in his name. It might be a stunt—or the future of politics."
+]
+
+[wangwu]
+mugshot = "mugshots/wangwu.jpg"
+name = "王五"
+text = [
+	"Perhaps you didn’t know that in addition to being a very funny writer, Kafka’s life yields a lot of comedy too.",
+	"The jury room was a gray-green, institutional rectangle: coat hooks on the wall, two small bathrooms off to one side, a long, scarred table surrounded by wooden armchairs, wastebaskets, and a floor superficially clean, deeply filthy. We entered this room on a Friday at noon, most of us expecting to be gone from it by four or five that same day. We did not see the last of it until a full twelve hours had elapsed, by which time the grimy oppressiveness of the place had become, for me at least, inextricably bound up with psychological defeat."
+]
+
+[test]
+mugshot = "mugshots/lisi.jpg"
+name = "测试"
+text = [
+	"The shrinking of the country’s ice sheet is triggering feedback loops that accelerate the global crisis.",
+	"The retired senator Mike Gravel gave two young fans his Twitter password and permission to campaign in his name. It might be a stunt—or the future of politics."
+]

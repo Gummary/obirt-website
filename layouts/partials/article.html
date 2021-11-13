@@ -1,0 +1,31 @@
+<div class="box">
+    {{ $year := index .issued "date-parts" 0 0 | string }}
+	<p>
+		<strong>{{ title .title }}</strong>
+        <span class="year">{{ $year }}</span> 
+	</p>
+    <div>
+        {{ range $author := .author }}
+        <span class="family">{{ $author.family }}</span>,
+        <span class="given">
+			{{ range $names := split $author.given " " }}
+            	{{ range $comps := split $names "-"}}
+					{{ substr $comps 0 1 }}.
+				{{ end }}
+            {{ end }}
+		</span>
+        {{ end }}
+    </div>
+	<div>
+		<span>
+            <a class="button" href="https://scholar.google.com/scholar?q={{.title}}" title="Find on google scholar" target="_blank">
+                Find on Google Scholar
+            </a>
+        </span>
+		<span>
+			<a class="button">
+				Download
+			</a>
+		</span>
+	</div>
+</div>

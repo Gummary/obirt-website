@@ -1,0 +1,159 @@
+[
+	{
+		"author": [
+			{
+				"family": "Song",
+				"given": "Xiao-Wei"
+			},
+			{
+				"family": "Dong",
+				"given": "Zhang-Ye"
+			},
+			{
+				"family": "Long",
+				"given": "Xiang-Yu"
+			},
+			{
+				"family": "Li",
+				"given": "Su-Fang"
+			},
+			{
+				"family": "Zuo",
+				"given": "Xi-Nian"
+			},
+			{
+				"family": "Zhu",
+				"given": "Chao-Zhe"
+			},
+			{
+				"family": "He",
+				"given": "Yong"
+			},
+			{
+				"family": "Yan",
+				"given": "Chao-Gan"
+			},
+			{
+				"family": "Zang",
+				"given": "Yu-Feng"
+			}
+		],
+		"container-title": "PloS one",
+		"id": "song2011rest",
+		"issue": "9",
+		"issued": {
+			"date-parts": [
+				[
+					2011
+				]
+			]
+		},
+		"page": "e25031",
+		"publisher": "Public Library of Science San Francisco, USA",
+		"title": "REST: a toolkit for resting-state functional magnetic resonance imaging data processing",
+		"title-short": "REST",
+		"type": "article-journal",
+		"volume": "6"
+	},
+	{
+		"author": [
+			{
+				"family": "Yan",
+				"given": "Chao-Gan"
+			},
+			{
+				"family": "Cheung",
+				"given": "Brian"
+			},
+			{
+				"family": "Kelly",
+				"given": "Clare"
+			},
+			{
+				"family": "Colcombe",
+				"given": "Stan"
+			},
+			{
+				"family": "Craddock",
+				"given": "R Cameron"
+			},
+			{
+				"family": "Di Martino",
+				"given": "Adriana"
+			},
+			{
+				"family": "Li",
+				"given": "Qingyang"
+			},
+			{
+				"family": "Zuo",
+				"given": "Xi-Nian"
+			},
+			{
+				"family": "Castellanos",
+				"given": "F Xavier"
+			},
+			{
+				"family": "Milham",
+				"given": "Michael P"
+			}
+		],
+		"container-title": "Neuroimage",
+		"id": "yan2013comprehensive",
+		"issued": {
+			"date-parts": [
+				[
+					2013
+				]
+			]
+		},
+		"page": "183-201",
+		"publisher": "Elsevier",
+		"title": "A comprehensive assessment of regional variation in the impact of head micromovements on functional connectomics",
+		"type": "article-journal",
+		"volume": "76"
+	},
+	{
+		"author": [
+			{
+				"family": "Wang",
+				"given": "Jinhui"
+			},
+			{
+				"family": "Wang",
+				"given": "Xindi"
+			},
+			{
+				"family": "Xia",
+				"given": "Mingrui"
+			},
+			{
+				"family": "Liao",
+				"given": "Xuhong"
+			},
+			{
+				"family": "Evans",
+				"given": "Alan"
+			},
+			{
+				"family": "He",
+				"given": "Yong"
+			}
+		],
+		"container-title": "Frontiers in human neuroscience",
+		"id": "wang2015gretna",
+		"issued": {
+			"date-parts": [
+				[
+					2015
+				]
+			]
+		},
+		"page": "386",
+		"publisher": "Frontiers",
+		"title": "GRETNA: a graph theoretical network analysis toolbox for imaging connectomics",
+		"title-short": "GRETNA",
+		"type": "article-journal",
+		"volume": "9"
+	}
+]

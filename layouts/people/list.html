@@ -1,0 +1,46 @@
+{{ define "main" }}
+<section class="hero is-medium has-team-bg">
+    <div class="hero-body">
+	</div>
+</section>
+<main id="content" class="container section">
+
+	{{$professor := index .Site.Data.people.professor "zhuchaozhe"}}
+	{{$current := .Site.Data.people.current }}
+	{{$past := .Site.Data.people.past }}
+
+	<section class="section">
+		<h1 class="title">导师</h1>
+		<div id="prof" class="columns is-vcentered">
+			<div class="column is-one-fifth">
+				<figure class="image is-1by1">
+					<img class="is-rounded" src="{{ $professor.mugshot }}">
+				</figure>
+			</div>
+			<div class="column">
+				{{ range $professor.text }}
+				<p>{{ . | markdownify }}</p>
+				{{ end }}
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<h1 class="title">当前研究生</h1>
+		<div class="columns is-multiline">
+		{{ range $current }}
+			{{ partial "person.html" . }}
+		{{ end }}
+		</div>
+	</section>
+
+	<section class="section">
+		<h1 class="title">已毕业研究生</h1>
+		<div class="columns is-multiline">
+			{{ range $past }}
+				{{ partial "person.html" . }}
+			{{ end }}
+			</div>
+	</section>
+</main>
+{{ end }}

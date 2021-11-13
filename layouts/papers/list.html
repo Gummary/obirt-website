@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="hero is-medium has-paper-bg">
+    <div class="hero-body">
+	</div>
+</section>
+<section id="content" class="container section">
+	{{ $publications := .Site.Data.papers }}
+
+        {{ $idyear := newScratch }}
+        {{ range $publication := $publications }}
+        {{ $year := index $publication.issued "date-parts" 0 0 | int }}
+        {{ $month := index $publication.issued "date-parts" 0 1 | int }}
+        {{ $day := index $publication.issued "date-parts" 0 2 | int }}
+        {{ $fyear := printf "%04d" (sub $year 3000)}}
+        {{ $fmonth := printf "%02d" (sub $month 12) }}
+        {{ $fday := printf "%02d" (sub $day 31) }}
+        {{ $date := print $fyear "-" $fmonth "-" $fday "-" $publication.id | string}}
+        {{ $idyear.SetInMap "date" $date $publication.id }}
+        {{ $idyear.SetInMap "pubs" $publication.id $publication }}
+        {{ end }}
+
+
+        {{ range $DateSort, $id := ($idyear.Get "date") }}
+            {{ $pub := index ($idyear.Get "pubs") $id }}
+            {{/*  {{ $year := index $pub.issued "date-parts" 0 0 | string }}  */}}
+            {{ partial "article.html" $pub }}
+        {{ end }}
+</section>
+{{ end }}
