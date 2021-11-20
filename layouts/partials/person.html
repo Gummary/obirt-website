@@ -1,5 +1,5 @@
 <div class="column is-one-third">
-	<div class="card fast-transition">
+	<div class="card fast-transition bm--card-equal-height">
 		<div class="card-image">
 			<figure class="image is-2by1">
 				<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
@@ -7,9 +7,9 @@
 		</div>
 		<div class="card-content">
 			<h1 class="subtitle">{{.name}}</h2>
-			<div class="summary">
+			<div class="summary ">
 				{{ range .text }}
-				<p> {{ . | markdownify }}</p>
+				<p class="limit-line"> {{ . | markdownify }}</p>
 				{{ end }}
 			</div>
 		</div>
