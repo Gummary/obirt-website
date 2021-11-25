@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://127.0.0.1:8080/categories/</loc>
+    <loc>https://gummary.github.io/obirt-website/categories/</loc>
   </url><url>
-    <loc>https://127.0.0.1:8080/</loc>
+    <loc>https://gummary.github.io/obirt-website/</loc>
   </url><url>
-    <loc>https://127.0.0.1:8080/papers/</loc>
+    <loc>https://gummary.github.io/obirt-website/papers/</loc>
   </url><url>
-    <loc>https://127.0.0.1:8080/people/</loc>
+    <loc>https://gummary.github.io/obirt-website/people/</loc>
   </url><url>
-    <loc>https://127.0.0.1:8080/tags/</loc>
+    <loc>https://gummary.github.io/obirt-website/tags/</loc>
   </url>
 </urlset>

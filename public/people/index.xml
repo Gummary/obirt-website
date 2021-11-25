@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>People on Obirt</title>
-    <link>https://127.0.0.1:8080/people/</link>
+    <link>https://gummary.github.io/obirt-website/people/</link>
     <description>Recent content in People on Obirt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://127.0.0.1:8080/people/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="https://gummary.github.io/obirt-website/people/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
