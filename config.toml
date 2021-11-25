@@ -3,6 +3,7 @@ languageCode = "zh-cn"
 title = "Obirt"
 
 publishDir = "docs"
+canonifyURLs = true
 
 [params]
   author = "Gum"
