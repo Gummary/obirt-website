@@ -2,8 +2,6 @@ baseURL = "https://gummary.github.io/obirt-website/"
 languageCode = "zh-cn"
 title = "Obirt"
 
-publishDir = "docs"
-
 [params]
   author = "Gum"
   description = "Obirt 实验室"
